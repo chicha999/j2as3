@@ -1,0 +1,158 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #F3F4F6 0%, #FFFFFF 100%);
+    color: #1f2937;
+}
+
+/* Header */
+header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+header .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #2563EB;
+}
+header nav button {
+    margin-left: 10px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+.hero .urgent-badge {
+    background: #F59E0B;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.hero-title {
+    font-size: 3rem;
+    color: #2563EB;
+    margin-bottom: 1rem;
+}
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.price-info {
+    font-weight: 600;
+    color: #111;
+}
+.btn-primary {
+    background: linear-gradient(135deg, #2563EB, #1D4ED8);
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.btn-primary:hover { transform: translateY(-2px); }
+.btn-secondary {
+    background: white;
+    color: #2563EB;
+    padding: 16px 32px;
+    border: 2px solid #2563EB;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.btn-secondary:hover {
+    background: #2563EB;
+    color: white;
+}
+
+/* Tariffs */
+.section.tariffs {
+    text-align: center;
+    padding: 60px 20px;
+}
+.tariff-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.tariff-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 30px 20px;
+    min-width: 200px;
+}
+.tariff-card h3 {
+    font-size: 1.5rem;
+    color: #2563EB;
+}
+.tariff-card p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Features */
+.section.features {
+    padding: 60px 20px;
+    text-align: center;
+}
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feature-icon {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #2563EB, #1D4ED8);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #1f2937;
+    color: white;
+}
+
+/* Адаптив */
+@media(max-width:768px){
+    .hero-title { font-size: 2.2rem; }
+    .tariff-cards { flex-direction: column; gap: 20px; }
+    .features-grid { flex-direction: column; gap: 20px; }
+}
